@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor=UIColor(red:129/255, green:10/255 ,blue:20/255 ,alpha:1 )
         item1.text = "1"
         item2.text = "1"
         item3.text = "1"
@@ -43,6 +44,31 @@ class ViewController: UIViewController {
     @IBOutlet weak var qbox4: UITextField!
     @IBOutlet weak var save: UIButton!
     @IBOutlet weak var cancel: UIButton!
+    
+    @IBAction func quantity1(_ sender: UIStepper)
+    {
+        qbox1.text=String(sender.value)
+        }
+    
+    @IBAction func quantity2(_ sender: UIStepper) {
+        qbox2.text=String(sender.value)
+    }
+    @IBAction func quantity3(_ sender: UIStepper) {
+        qbox3.text=String(sender.value)
+    }
+    
+    @IBAction func quantity4(_ sender: UIStepper) {
+        qbox4.text=String(sender.value)
+    }
+    
+    @IBAction func quantity5(_ sender: UIStepper) {
+        qbox5.text=String(sender.value)
+    }
+    @IBAction func quantity6(_ sender: UIStepper) {
+        qbox6.text=String(sender.value)
+    }
+    
+    
 }
 
 
